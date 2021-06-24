@@ -1,167 +1,146 @@
-*{
+* {
     padding: 0;
     margin: 0;
-    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Anton', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+img{
+    display: block;
 }
 
 .header{
-    background-image: url(..//img/header-bg.png);
-    width: 1600px;
-    height: 900px;
+    padding-top: 50px;
+    background: url("../img/header-bg.png") center / cover no-repeat;
+    height: 100vh;
 }
-.nav_a{
-    color: white;
+
+.nav{
+    display: flex;
+}
+
+.nav-link{
+    margin-right: 40px;
     font-size: 14px;
-    font-family: Anton;
-    font-weight: 400;
-    margin-left: 40px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
     text-decoration: none;
+    transition: all .7s;
 }
 
-.container>ul{
+.nav-link:hover{
+    color: lightgrey;
+}
+
+.nav-link:active{
+    color: grey;
+}
+
+.nav-link:nth-last-child(1){
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.nav-content{
+    color: #fff;
     display: flex;
+    flex-direction: column;
+    margin-top: 20vh;
+    align-items: flex-start;
 }
-.container{
-    display: flex;
-    margin-left: 316px;
-    padding-top: 71px;
-}
-.container>p{
-    margin-left: 623px;
-    color: white;
-}
-.heading_one{
-    margin-top: 229px;
-    font-family: Anton;
+
+.nav-subtitle{
     font-size: 30px;
-    font-weight: 400;
-    color: white;
-    margin-left: 216px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
-h1{
-    color: white;
-    font-family: Anton;
-    font-weight: 400;
+
+.nav-title{
     font-size: 100px;
-    margin-left: 216px;
+    text-transform: uppercase;
 }
-.button{
-    background-color: Transparent;
-    background-repeat:no-repeat;
+
+.nav-button{
+    font-family: 'Anton', sans-serif;
+    font-size: 17px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 17px 43px;
     border: 1px solid #FFFFFF;
-    cursor:pointer;
-    overflow: hidden;  
-    color: white;
-    padding: 18px 50px;
-    margin-left: 216px;
+    background: transparent;
+    color: #FFFFFF;
+    transition: all .7s;
+    cursor: pointer;
 }
 
-.wrapper_main{
-    display: flex;
+.nav-button:hover{
+    background: #fff;
+    color: #000;
 }
 
-.event{
-    width: 334px;
-    height: 73px;
-    margin-top: 113px;
-    margin-left: 216px;
-    font-family: Anton;
+.about{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.about-title{
     font-size: 50px;
-    color: #000000;
-    font-weight: 400;
-}
-
-.wrapper_one>h3{
-    width: 300px;
-    height: 49px;
-    margin-top: 58px;
-    margin-left: 215px;
-    font-family: Anton;
-    font-weight: 400;
-    font-size: 25px;
-    color: #000000;
     text-transform: uppercase;
-}
-.wrapper_one>p{
-    width: 564px;
-    height: 146px;
-    font-size: 16px;
-    color: #000000;
-    font-family: Open Sans;
-    font-weight: 400;
-    margin-top: 19px;
-    margin-left: 215px;
-
+    margin-bottom: 58px;
 }
 
-.wrapper_too>p{
-    font-size: 16px;
-    color: #000000;
-    font-family: Open Sans;
-    font-weight: 400;
-    width: 564px;
-    height: 192px;
-    margin-top: 19px;
-    margin-left: 36px;
-}
-
-.wrapper_too>h3{
-    width: 300px;
-    height: 49px;
-    font-family: Anton;
-    color: #000000;
-    text-transform: uppercase;
-    font-size: 25px;
-    margin-top: 58px;
-    margin-left: 36px;
-}
-
-.wrapper_img{
+.about-posts{
     display: flex;
-
+    justify-content: space-between;
 }
 
-.candle{
-    width: 270px;
-    height: 344px;
-    margin-left: 216px;
-    margin-top: 67px;
-
-}
-.hamer{
-    width: 270px;
-    height: 344px;
-    margin-left: 29px;
-    margin-top: 67px;
+.about-post{
+    width: 48%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.desert{
-    width:570px;
-    height: 344px;
-    margin-top: 67px;
-    margin-left: 30px;
+.post-title{
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.about-text{
+    font-family: Open Sans, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: justify;
+}
+
+.about-img{
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer{
+    font-family: Open Sans, sans-serif;
+    font-size: 15px;
+    padding-bottom: 80px;
+}
+
+.footer .container{
     display: flex;
 }
 
-.project{
-    font-family: Open Sans;
-    font-size: 15px;
-   margin-top: 144px;
-   margin-bottom: 80px;
-   margin-left: 216px;
-    width: 244px;
-    height: 49px;
+.date{
+    margin-right: 55px;
 }
 
-.WAYUP{
-    font-family: Open Sans;
-    font-size: 15px;
-    width: 244px;
-    height: 49px;
-    margin-top: 144px;
-    margin-bottom: 80px;
-    margin-left: 55px;
-}
